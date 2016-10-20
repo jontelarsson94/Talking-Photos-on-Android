@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundView" tools:context="dva217_grupp1.AddMemActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/recyclerViewFrame">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/cardViewDescription">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:id="@+id/imageView2"
+                android:layout_gravity="center|bottom"
+                android:src="@drawable/ic_archive" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleField"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:hint="Collection"
+                android:selectAllOnFocus="false"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_save"
+                    style="@style/imageButton"
+                    android:padding="16dp"
+                    android:onClick="save" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton2"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_discard"
+                    style="@style/imageButton"
+                    android:padding="16dp"
+                    android:onClick="discard" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
+
